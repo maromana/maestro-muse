@@ -12,7 +12,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4 py-8">
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-background via-background to-secondary/20 px-4 py-8">
       {/* Decorative musical notes */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden opacity-[0.03]">
         <Music className="absolute left-[10%] top-[15%] h-24 w-24 text-foreground rotate-12" />
