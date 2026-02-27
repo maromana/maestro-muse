@@ -23,14 +23,19 @@ const Login = () => {
 
       <div className="w-full max-w-md animate-fade-in">
         {/* Card */}
-        <div className="rounded-xl border border-border bg-card p-8 shadow-lg sm:p-10">
+        <div className="rounded-xl border border-secondary/30 bg-card p-8 shadow-lg sm:p-10">
+          {/* Gold accent line */}
+          <div className="mx-auto mb-6 h-0.5 w-16 rounded-full bg-secondary" />
+
           {/* Logo */}
           <div className="mb-6 flex justify-center">
-            <img
-              src={logo}
-              alt="Logo de la Biblioteca Musical"
-              className="h-20 w-20 rounded-full object-cover shadow-md sm:h-24 sm:w-24"
-            />
+            <div className="rounded-full ring-2 ring-secondary/40 ring-offset-2 ring-offset-card">
+              <img
+                src={logo}
+                alt="Logo de la Biblioteca Musical"
+                className="h-20 w-20 rounded-full object-cover shadow-md sm:h-24 sm:w-24"
+              />
+            </div>
           </div>
 
           {/* Title */}
@@ -52,7 +57,7 @@ const Login = () => {
                 Correo electrónico
               </label>
               <div className="relative">
-                <Mail className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <Mail className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-secondary" />
                 <input
                   id="email"
                   type="email"
@@ -74,7 +79,7 @@ const Login = () => {
                 Contraseña
               </label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-secondary" />
                 <input
                   id="password"
                   type="password"
@@ -98,9 +103,9 @@ const Login = () => {
 
           {/* Divider */}
           <div className="my-6 flex items-center gap-3">
-            <div className="h-px flex-1 bg-border" />
-            <span className="text-xs text-muted-foreground">o</span>
-            <div className="h-px flex-1 bg-border" />
+            <div className="h-px flex-1 bg-secondary/30" />
+            <span className="text-xs text-secondary">✦</span>
+            <div className="h-px flex-1 bg-secondary/30" />
           </div>
 
           {/* Create account link */}
