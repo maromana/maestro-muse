@@ -92,6 +92,16 @@ const Login = () => {
               </div>
             </div>
 
+            {/* Forgot password */}
+            <div className="text-right">
+              <a
+                href="#"
+                className="text-xs font-medium text-secondary hover:underline underline-offset-4 transition-colors"
+              >
+                ¿Olvidaste tu contraseña? Recuperar contraseña
+              </a>
+            </div>
+
             {/* Submit */}
             <button
               type="submit"
