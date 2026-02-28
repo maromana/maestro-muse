@@ -5,10 +5,12 @@ import logo from "@/assets/logo.png";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Login logic placeholder
+    // Simulación: siempre muestra error porque no hay backend conectado
+    setError("Correo o contraseña incorrectos. Inténtalo de nuevo.");
   };
 
   return (
@@ -47,6 +49,12 @@ const Login = () => {
           </p>
 
           {/* Form */}
+          {error && (
+            <div className="rounded-lg border border-destructive/50 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+              {error}
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email */}
             <div className="space-y-1.5">
